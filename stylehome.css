@@ -1,0 +1,135 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@200;300;400;600;700 & display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.body{
+    margin: 0;
+    background-color: #F4F7F2;
+}
+
+/* menu navegacion */
+#cabecera{
+    width: 100%;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    z-index: 999;
+}
+#navegacion{
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+#logo{
+    width: 225px;
+    height: 77px;
+    left: 99px;
+    top: 29px;
+    margin-right: 110px;
+}
+.menu{
+    width: 100%;
+}
+
+    /* hamburguesa movil */
+    #btn-menu{
+        display: none;
+    }
+    #movil{
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+        text-align: right;
+        color: aquamarine;
+    }
+        /* */
+
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.menu ul li a{
+    display: block;
+    line-height: 85px;
+    padding: 0 20px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+.menu a:hover{
+    background-color: #84B6F4;
+    color: #ffffff;
+    border-bottom: #3d6aa1;
+}
+/* Para movil */
+@media (max-width: 1087px){
+    #cabecera{
+        justify-content: space-between;
+    }
+    #logo{
+        width: 20%;
+        display: block;
+        padding-left: 20px;
+    }
+    .menu{
+        position: absolute;
+        top: 100%;
+        transform: translateX(-100%);
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+        background: #50350a;
+        opacity: 75%;
+    }
+    .menu ul li a{
+        line-height: 45px;
+        padding: 0 20px;
+        border-bottom: 2px solid #6848;
+    }
+    #movil{
+        display: block;
+        padding-right: 20px;
+    }
+}
+#btn-menu:checked ~ .menu{
+    transform: translateX(0%);
+}
+
+
+
+
+
+
+
+
+=======
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(134, 174, 219);
+}
+.li a button{
+    font-family: "chivo";
+    font-weight: 500;
+    font-size: 16px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+>>>>>>> 8259b7539f165804c674f03a99cc87014749ff27

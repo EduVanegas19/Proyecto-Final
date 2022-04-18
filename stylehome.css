@@ -3,7 +3,7 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-.body{
+body{
     margin: 0;
     background-color: #F4F7F2;
 }
@@ -15,6 +15,7 @@
     left: 0%;
     top: 0%;
     z-index: 999;
+    background-color: #F4F7F2;
 }
 #navegacion{
     width: 100%;
@@ -119,3 +120,52 @@
     padding: 30px 10%;
 }
 
+/* HOME */
+.section{
+    width: 100%;
+    margin: 0;
+}
+.seccionHome{
+    background-image: url(./img/Home/steamdeckDESENFOCADO\ 1.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.cuadro{
+    position: absolute;
+    width: 900px;
+    height: 460px;
+    left: 213px;
+    top: 140px;
+    background-color: #000000a4;
+}
+.destacado img{
+    display: block;
+    position: absolute;
+    width: 380px;
+    height: 248px;
+    left: 54%;
+    bottom: 22%;
+}
+.destacado h1{
+    width: 50%;
+    color: #ffffff;
+    display: block;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 8%;
+}
+.tit2{
+    color: #84B6F4;
+}
+.destacado p{
+    width: 42%;
+    margin-left: 5%;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: justify;
+    color: #ffffff;
+}

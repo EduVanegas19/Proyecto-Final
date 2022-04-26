@@ -119,14 +119,15 @@ body{
     align-items: center;
     padding: 30px 10%;
 }
-/* ----- */
-/* HOME */
+/* ------------------- */
+/* -- QUIENES SOMOS -- */
+
 .section{
     width: 100%;
     margin: 0;
 }
-.seccionHome{
-    background-image: url(./img/Home/steamdeckDESENFOCADO\ 1.png);
+.seccionQuienesSomos{
+    background-image: url(./img/SobreNostros/sobreDESENFOCADOWEB\ 1.png);
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -139,7 +140,7 @@ body{
     height: 460px;
     left: 213px;
     top: 140px;
-    background-color: #000000c4;
+    background-color: #000000de;
 }
 .destacado img{
     display: block;
@@ -150,7 +151,7 @@ body{
     bottom: 22%;
 }
 .destacado h2{
-    width: 50%;
+    width: 100%;
     color: #ffffff;
     display: block;
     font-size: 50px;
@@ -162,7 +163,7 @@ body{
     color: #84B6F4;
 }
 .destacado p{
-    width: 42%;
+    width: 90%;
     margin-left: 5%;
     font-size: 24px;
     line-height: 35px;
@@ -170,52 +171,62 @@ body{
     color: #ffffff;
 }
 
-/* ------------- */
-/* SECCION PART1 */
-.contenido h1{
+/* --------------------------------- */
+/* -- Por que confiar en nosotros -- */
+.nosotros{
+    width: 50%;
+}
+.nosotros h3{
     width: 100%;
-    display: block;
-    font-size: 50px;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 2%;
-    padding-bottom: 2%;
-}
-.contenedor {
-    width: 100%;
-    margin-top: -3%;
-    padding-bottom: 8%;
-}
-.contenedor:hover{
-    background-color: #FF6961;
-    color: #ffffff;
-}
-.contenedor h3{
     display: block;
     font-size: 40px;
     font-weight: 500;
-    text-align: center;
-    padding-top: 1%;
-    text-decoration: none;
+    margin-top: 2%;
+    margin-left: 2%;
 }
-.fila{
+.contenedor{
     width: 100%;
     display: flex;
-    padding-top: 1%;
 }
-.fila p{
-    width: 40%;
-    margin-left: 10%;
-    font-size: 24px;
-    line-height: 35px;
+.caja{
+    width: 20%;
+    margin-left: 5%;
+    padding: 3%;
     text-align: justify;
 }
-.fila img{
+.caja p{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+
+}
+.caja:hover{
+    background-color: #c4c4c4;
+}
+
+/* -------------------- */
+/* -- Nuestro Equipo -- */
+.equipo{
     width: 100%;
-    max-width: 350px;
-    position: absolute;
-    margin-left: 60%;
-    margin-top: -2%;
+}
+.equipo h2{
+    width: 100%;
+    display: block;
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2%;
+}
+.part{
+    width: 80%;
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+.foto{
+    margin-left: 25%;
 }
 
 /* --------------- */

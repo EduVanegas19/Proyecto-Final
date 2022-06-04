@@ -67,7 +67,7 @@ body{
     border-bottom: #3d6aa1;
 }
 /* Para movil */
-@media (max-width: 1087px){
+@media (max-width: 576px){
     #cabecera{
         justify-content: space-between;
     }
@@ -95,6 +95,42 @@ body{
     #movil{
         display: block;
         margin-left: 20%;
+    }
+    .menu a:hover{
+        background-color: #84B6F4;
+        color: #ffffff;
+    }
+}
+/* TABLET */
+@media (min-width: 577px) and (max-width: 1087px){
+    #cabecera{
+        justify-content: space-between;
+    }
+    #navegacion img{
+        width: 100%;
+        max-width: 175px;
+        display: block;
+        padding-left: 90px;
+    }
+    .menu{
+        position: absolute;
+        top: 100%;
+        transform: translateX(-100%);
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+        opacity: 75%;
+    }
+    .menu ul li a{
+        line-height: 45px;
+        padding: 0 20px;
+        border-bottom: 2px solid #3d6aa1;
+        font-weight: 550;
+    }
+    #movil{
+        display: block;
+        margin-left: 60%;
     }
     .menu a:hover{
         background-color: #84B6F4;
@@ -171,8 +207,8 @@ body{
     text-align: justify;
     color: #ffffff;
 }
-
-@media (max-width: 1087px){
+/* MOVIL */
+@media (max-width: 576px){
     .cuadro{
         width: 88%;
         height: 87%;
@@ -183,7 +219,7 @@ body{
         width: 80%;
         font-size: 30px;
         text-align: left;
-        margin-top: 10%;
+        margin-top: 30%;
         margin-left: 12%;
     }
     .cuadro p{
@@ -191,6 +227,28 @@ body{
         margin-left: 14%;
         font-size: 18px;
         line-height: 30px;
+    }
+}
+/* TABLET */
+@media (min-width: 577px) and (max-width: 1087px){
+    .cuadro{
+        width: 88%;
+        height: 67%;
+        margin-left: -9%;
+        margin-top: -10%;
+    }
+    .cuadro h2{
+        width: 80%;
+        font-size: 50px;
+        text-align: left;
+        margin-top: 15%;
+        margin-left: 12%;
+    }
+    .cuadro p{
+        width: 70%;
+        margin-left: 14%;
+        font-size: 26px;
+        line-height: 40px;
     }
 }
 
@@ -208,14 +266,23 @@ body{
     margin-left: 2%;
 }
 .contenedor{
+    background-image: url(./img/SobreNostros/codigo.jpg);
+    padding-bottom: 5%;
+    margin-top: -1%;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+
     width: 100%;
     display: flex;
 }
 .caja{
     width: 20%;
+    margin-top: 5%;
     margin-left: 5%;
     padding: 3%;
     text-align: justify;
+    background-color: #c4c4c4c9;
 }
 .caja p{
     display: block;
@@ -226,10 +293,11 @@ body{
 }
 .caja:hover{
     background-color: #c4c4c4;
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.473);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.89);
+    transition: .4s ease;
 }
-
-@media (max-width: 1087px){
+/* MOVIL */
+@media (max-width: 576px){
     .nosotros{
         width: 90%;
     }
@@ -246,6 +314,26 @@ body{
     .caja p{
         font-size: 14px;
         line-height: 20px;
+    }
+}
+/* TABLET */
+@media (min-width: 577px) and (max-width: 1087px){
+    .nosotros{
+        width: 90%;
+    }
+    .nosotros h3{
+        font-size: 44px;
+    }
+    .contenedor{
+        display: block;
+    }
+    .caja{
+        width: 70%;
+        margin-left: 12%;
+    }
+    .caja p{
+        font-size: 24px;
+        line-height: 30px;
     }
 }
 /* -------------------- */
@@ -268,11 +356,64 @@ body{
     margin-left: 5%;
     margin-bottom: 10%;
 }
+/* --------------------- */
+/* Animacion foto */
 .foto{
-    margin-left: 25%;
+    margin-left: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto figure{
+    position: relative;
+    height: 370px;
+    width: 280px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+.foto figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.foto figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #84B6F4); 
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
 }
 
-@media (max-width: 1087px){
+.foto figure:hover > .capa{ 
+    opacity: 1;
+    visibility: visible;
+}
+.foto figure:hover > .capa h3{ 
+    margin-top: 100%;
+    margin-bottom: 15px;
+}
+.foto figure .capa h3{ 
+    font-weight: 400px;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.foto figure:hover > img{ 
+    transform: scale(1.1);
+}
+.capa a{
+    text-decoration: none;
+    color: #000000;
+}
+/* MOVIL */
+@media (max-width: 576px){
     .equipo h2{
         font-size: 28px;
         margin-top: 3%;
@@ -282,11 +423,35 @@ body{
         margin-left: 5%;
     }
     .foto{
-        margin-left: 30%;
-        margin-top: 15%;
+        margin-left: 7%;
+        margin-top: 1%;
     }
-    .foto img{
-        max-width: 150px;
+    .foto figure{
+        height: 200px;
+        width: 150px;
+    }
+    .foto figure:hover > .capa h3{ 
+        margin-top: 90%;
+    }
+}
+/* TABLET */
+@media (min-width: 577px) and (max-width: 1087px){
+    .equipo h2{
+        font-size: 68px;
+        margin-top: 3%;
+    }
+    .foto figure{
+        height: 270px;
+        width: 210px;
+    }
+    .part{
+        margin-left: -3%;
+    }
+    .foto figure:hover > .capa h3{ 
+        margin-top: 90%;
+    }
+    .ultimo{
+        margin-left: 35%;
     }
 }
 
@@ -321,8 +486,8 @@ body{
     font-size: 30px;
     font-weight: 500;
 }
-
-@media (max-width: 1087px){
+/* MOVIL */
+@media (max-width: 576px){
     #copy img{
         max-width: 75px;
         margin-left: 30%;
@@ -334,5 +499,20 @@ body{
         padding: 0 20px;
         line-height: 40px;
         font-size: 10px;
+    }
+}
+/* TABLET */
+@media (min-width: 577px) and (max-width: 1087px){
+    #copy img{
+        max-width: 165px;
+        margin-left: 60%;
+    }
+    .texto ul{
+        margin-left: 15%;
+    }
+    .texto ul li a{
+        padding: 0 20px;
+        line-height: 40px;
+        font-size: 20px;
     }
 }

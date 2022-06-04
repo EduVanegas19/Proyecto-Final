@@ -94,7 +94,7 @@ body{
         font-weight: 550;
     }
     #movil{
-        display: flex;
+        display: block;
         margin-left: 20%;
     }
     .menu a:hover{
@@ -108,10 +108,10 @@ body{
         justify-content: space-between;
     }
     #navegacion img{
-        width: 50%;
+        width: 100%;
         max-width: 250px;
         display: block;
-        padding-left: 80px;
+        padding-left: 90px;
     }
     .menu{
         position: absolute;
@@ -131,7 +131,7 @@ body{
     }
     #movil{
         display: block;
-        margin-left: 50%;
+        margin-left: 60%;
     }
     .menu a:hover{
         background-color: #84B6F4;
@@ -156,155 +156,165 @@ body{
     align-items: center;
     padding: 30px 10%;
 }
-
-/* CUERPO */
-.seccion{
+/* ----- */
+/* NOTICIAS */
+.banner{
+    height: 100vh;
+}
+.imgfondo{
     width: 100%;
-    margin: 0;
-}
-.fondo{
-    width: 100%;
-    height: 80px;
-    background-image: url(./img/Reseñas/reseñaWEB\ 1.png);
-    margin-top: 85px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    height: 100vh;
 }
 
-.titulo h2{
-    width: 40%;
-    padding: 5px;
-    margin-top: 7px;
-    margin-left: 30%;
-    background-color: #000000ce;
-    color: #ffffff;
-    display: block;
-    font-size: 50px;
-    font-weight: 500;
-    text-align: center;
-}
-a{
-    text-decoration: none;
-}
+/*---------*/
 
-.fila{
-    width: 75%;
-    margin-left: 10%;
+.carousel-caption{
+    background-color: #000000c4;
+    bottom: 6% !important;
+    text-align: center !important;
+    padding: 2% 1% !important;
+}
+.carousel-caption h2{
     margin-bottom: 2%;
-    padding-bottom: 2%;
-    color: #000000;
+    font-weight: 700;
 }
-.fila:hover{
-    background-color: #d291fd60;
-    color: #000000;
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.425);
-    transition: .4s ease;
-}
-.fila h2{
-    display: block;
-    font-size: 40px;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 1%;
-}
-.Caja{
-    width: 100%;
-    display: flex;
-}
-.Caja p{
-    width: 40%;
-    margin-left: 10%;
-    font-size: 24px;
-    line-height: 35px;
+.carousel-caption p{
     text-align: justify;
+    font-size: 18px;
 }
-.Caja img{
-    width: 100%;
-    max-width: 350px;
-    position: absolute;
-    margin-left: 45%;
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    width: 10px !important;
+    height: 10px !important;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+
+    border-radius: 50%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+.carousel-indicators {
+    margin-bottom: 4% !important;
+}
+.carousel-control-prev-icon{
+    height: 150px !important;
+    margin-left: -3rem !important;
+}
+.carousel-control-prev:hover{
+    background-image: linear-gradient(to right, #ffffff2d, #ffffff00);
+    transition: .6s ease;
+}
+.carousel-control-next:hover{
+    background-image: linear-gradient(to left, #ffffff2d, #ffffff00);
+    transition: .6s ease;
+}
+.btn{
     margin-top: 0%;
+    margin-right: 92%;
+    background-color: #d291fd96 !important;
+    border: none !important;
 }
-/* PARA MOVIL */
+.btn:hover{
+    background-color: #9061af96 !important;
+}
+/* MOVIL */
 @media (max-width: 576px){
-    .fondo{
-        width: 100%;
-        height: 53px;
-        margin-top: 30px;
+    .imgfondo{
+        width: auto;
     }
-    .titulo h2{
-        width: 65%;
-        margin-left: 13%;
-        font-size: 24px;
+    .cuadro{
+        display: block;
+        background-color: #000000c4;
+        position: relative;
+        width: 88%;
+        height: 70%;
+        margin-left: -9%;
+        margin-bottom: 10%;
     }
-    .fila{
-        width: 75%;
-        margin-left: 12%;
-        background-color: #d291fd34;
-        transition: .0s ease;
-        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.151);
+    .cuadro h2{
+        color: #ffffff;
+        display: block;
+        font-weight: 500;
+
+        width: 80%;
+        font-size: 30px;
+        text-align: left;
+        margin-top: 15%;
+        margin-left: 14%;
     }
-    .fila h2{
-        font-size: 24px;
-        font-weight: 600;
+    .cuadro p{
+        margin-top: 5%;
+        text-align: justify;
+        color: #ffffff;
+
+        width: 70%;
+        margin-left: 14%;
+        font-size: 18px;
+        line-height: 30px;
     }
-    .Caja{
-        width: 83%;
-        display: flex;
-        flex-direction: column;
+    .carousel-indicators {
+        margin-bottom: 28% !important;
     }
-    .Caja p{
-        width: 100%;
-        font-size: 14px;
-        line-height: 20px;
-        margin-top: 50%;
+    .carousel-control-prev-icon{
+        height: 150px !important;
+        margin-left: 0rem !important;
     }
-    .Caja img{
-        max-width: 200px;
-        margin-left: 13%;
-        margin-bottom: 50%;
+    .btn{
+        margin-right: 42%;
     }
 }
+
 /* TABLET */
 @media (min-width: 577px) and (max-width: 1087px){
-    .fondo{
-        width: 100%;
-        height: 65px;
-        margin-top: 12%;
+    .imgfondo{
+        width: auto;
     }
-    .titulo h2{
-        width: 65%;
-        margin-left: 16%;
-        font-size: 34px;
+    .cuadro{
+        display: block;
+        background-color: #000000c4;
+        position: relative;
+        width: 78%;
+        height: 45%;
+        margin-left: -4%;
+        margin-bottom: -5%;
     }
-    .fila{
-        width: 75%;
-        margin-left: 10%;
-        margin-bottom: 2%;
-        padding-bottom: 2%;
+    .cuadro h2{
+        color: #ffffff;
+        display: block;
+        font-weight: 500;
+
+        width: 80%;
+        font-size: 43px;
+        text-align: left;
+        margin-top: 3%;
+        margin-left: 14%;
     }
-    .fila h2{
-        font-size: 34px;
-        font-weight: 600;
-    }
-    .Caja{
-        width: 83%;
-        display: flex;
-        flex-direction: column;
-    }
-    .Caja p{
-        width: 100%;
+    .cuadro p{
+        margin-top: 5%;
+        text-align: justify;
+        color: #ffffff;
+
+        width: 70%;
+        margin-left: 14%;
         font-size: 22px;
         line-height: 30px;
-        margin-top: 50%;
     }
-    .Caja img{
-        width: 100%;
-        max-width: 350px;
-        margin-left: 15%;
-        margin-top: 0%;
+    .carousel-indicators {
+        margin-bottom: 5% !important;
+    }
+    .carousel-control-prev-icon{
+        height: 150px !important;
+        margin-left: 0rem !important;
+    }
+    .btn{
+        margin-right: 58%;
     }
 }
+
 /* --------------- */
 /* -- Copyright -- */
 #copy{
@@ -336,9 +346,11 @@ a{
     font-size: 30px;
     font-weight: 500;
 }
+.texto ul li{
+    color: #ffffff;
+}
 /* MOVIL */
-
-@media (max-width: 1087px){
+@media (max-width: 576px){
     #copy img{
         max-width: 75px;
         margin-left: 30%;
@@ -367,4 +379,4 @@ a{
         line-height: 40px;
         font-size: 20px;
     }
-}
+} 

@@ -67,7 +67,7 @@ body{
     border-bottom: #3d6aa1;
 }
 /* Para movil */
-@media (max-width: 1087px){
+@media (max-width: 576px){
     #cabecera{
         justify-content: space-between;
     }
@@ -95,6 +95,42 @@ body{
     #movil{
         display: block;
         margin-left: 20%;
+    }
+    .menu a:hover{
+        background-color: #84B6F4;
+        color: #ffffff;
+    }
+}
+/* TABLET */
+@media (min-width: 577px) and (max-width: 1087px){
+    #cabecera{
+        justify-content: space-between;
+    }
+    #navegacion img{
+        width: 100%;
+        max-width: 155px;
+        display: block;
+        padding-left: 90px;
+    }
+    .menu{
+        position: absolute;
+        top: 100%;
+        transform: translateX(-100%);
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+        opacity: 75%;
+    }
+    .menu ul li a{
+        line-height: 45px;
+        padding: 0 20px;
+        border-bottom: 2px solid #3d6aa1;
+        font-weight: 550;
+    }
+    #movil{
+        display: block;
+        margin-left: 60%;
     }
     .menu a:hover{
         background-color: #84B6F4;
@@ -145,7 +181,8 @@ body{
     font-weight: 500;
     text-align: center;
 }
-@media (max-width: 1087px){
+/* MOVIL */
+@media (max-width: 576px){
     .fondo{
         width: 100%;
         height: 55px;
@@ -157,8 +194,26 @@ body{
         font-size: 28px;
     }
 }
+/* TABLET */
+@media (min-width: 577px) and (max-width: 1087px){
+    .fondo{
+        width: 100%;
+        height: 75px;
+        margin-top: 60px;
+    }
+    .titulo h2{
+        width: 50%;
+        margin-left: 25%;
+        font-size: 44px;
+    }
+}
 /* ---------------------------- */
 /* -- RESEÑAS - Contenedores -- */
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
 .contenedor{
     display: grid;
     grid-template-columns: repeat(3, 300px);
@@ -184,11 +239,13 @@ body{
 }
 .caja1:hover{
     width: 410px;
-    height: 600px; 
+    height: 600px;
+    background-color: #a6cee6; 
 }
 .caja2:hover{
     width: 410px;
-    height: 600px; 
+    height: 600px;
+    background-color: #a6cee6;
 }
 .caja2{
     background-color: #C4D2DA;
@@ -230,8 +287,8 @@ body{
     margin-left: 3%;
     line-height: 20px;
 }
-
-@media (max-width: 1087px){
+/* MOVIL */
+@media (max-width: 576px){
     .contenedor{
         grid-template-columns: repeat(1, 100px);
         column-gap: 10%;
@@ -242,20 +299,20 @@ body{
     }
     .caja1{
         width: 300px;
-        height: 370px;
+        height: 470px;
     }
     .caja1:hover{
         width: 320px;
-        height: 388px;
+        height: 488px;
     }
     .caja2{
         width: 300px;
-        height: 370px;
+        height: 520px;
         margin-top: 5%;
     }
     .caja2:hover{
         width: 320px;
-        height: 388px; 
+        height: 648px; 
     }
     .caja1 h3{
         margin-top: 0%;
@@ -274,6 +331,56 @@ body{
         text-align: justify;
         margin-left: 3%;
         line-height: 20px;
+    }
+}
+/* TABLET */
+@media (min-width: 577px) and (max-width: 1087px){
+    .contenedor{
+        grid-template-columns: repeat(1, 100px);
+        column-gap: 10%;
+        row-gap: 5%;
+        margin-top: 10px;
+        margin-bottom: 25%;
+        margin-right: 35%;
+    }
+    .caja1{
+        width: 400px;
+        height: 590px;
+    }
+    .caja1:hover{
+        width: 420px;
+        height: 628px;
+    }
+    .caja2{
+        width: 400px;
+        height: 650px;
+        margin-top: 5%;
+    }
+    .caja2:hover{
+        width: 420px;
+        height: 678px;
+    }
+    .caja1 h3{
+        margin-top: 0%;
+        font-size: 30px;
+        text-align: center;
+    }
+    .caja2 h3{
+        margin-top: 0%;
+        font-size: 30px;
+        text-align: center;
+    }
+    .caja1 p{
+        line-height: 25px;
+        font-size: 18px;
+    }
+    .caja2 p{
+        width: 95%;
+        display: block;
+        text-align: justify;
+        margin-left: 3%;
+        line-height: 25px;
+        font-size: 18px;
     }
 }
 
@@ -308,6 +415,7 @@ body{
     font-size: 30px;
     font-weight: 500;
 }
+/* MOVIL */
 @media (max-width: 1087px){
     #copy img{
         max-width: 75px;
@@ -320,5 +428,20 @@ body{
         padding: 0 20px;
         line-height: 40px;
         font-size: 10px;
+    }
+}
+/* TABLET */
+@media (min-width: 577px) and (max-width: 1087px){
+    #copy img{
+        max-width: 165px;
+        margin-left: 60%;
+    }
+    .texto ul{
+        margin-left: 15%;
+    }
+    .texto ul li a{
+        padding: 0 20px;
+        line-height: 40px;
+        font-size: 20px;
     }
 }

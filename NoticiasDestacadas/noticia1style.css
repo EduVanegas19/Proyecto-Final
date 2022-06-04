@@ -94,7 +94,7 @@ body{
         font-weight: 550;
     }
     #movil{
-        display: flex;
+        display: block;
         margin-left: 20%;
     }
     .menu a:hover{
@@ -108,10 +108,10 @@ body{
         justify-content: space-between;
     }
     #navegacion img{
-        width: 50%;
+        width: 100%;
         max-width: 250px;
         display: block;
-        padding-left: 80px;
+        padding-left: 90px;
     }
     .menu{
         position: absolute;
@@ -131,7 +131,7 @@ body{
     }
     #movil{
         display: block;
-        margin-left: 50%;
+        margin-left: 60%;
     }
     .menu a:hover{
         background-color: #84B6F4;
@@ -156,155 +156,100 @@ body{
     align-items: center;
     padding: 30px 10%;
 }
-
-/* CUERPO */
-.seccion{
-    width: 100%;
-    margin: 0;
-}
-.fondo{
-    width: 100%;
-    height: 80px;
-    background-image: url(./img/Reseñas/reseñaWEB\ 1.png);
-    margin-top: 85px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-}
-
-.titulo h2{
-    width: 40%;
-    padding: 5px;
-    margin-top: 7px;
-    margin-left: 30%;
-    background-color: #000000ce;
-    color: #ffffff;
-    display: block;
-    font-size: 50px;
-    font-weight: 500;
-    text-align: center;
-}
-a{
-    text-decoration: none;
-}
-
-.fila{
-    width: 75%;
-    margin-left: 10%;
-    margin-bottom: 2%;
-    padding-bottom: 2%;
-    color: #000000;
-}
-.fila:hover{
-    background-color: #d291fd60;
-    color: #000000;
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.425);
-    transition: .4s ease;
-}
-.fila h2{
-    display: block;
-    font-size: 40px;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 1%;
-}
-.Caja{
-    width: 100%;
-    display: flex;
-}
-.Caja p{
-    width: 40%;
-    margin-left: 10%;
-    font-size: 24px;
-    line-height: 35px;
+/* ------------------------------------------ */
+/* CONTENIDO */
+.contenido{
+    margin-top: 6%;
     text-align: justify;
 }
-.Caja img{
-    width: 100%;
-    max-width: 350px;
-    position: absolute;
-    margin-left: 45%;
-    margin-top: 0%;
+.text h1{
+    font-weight: 600;
 }
-/* PARA MOVIL */
+.text p{
+    margin-top: 3%;
+    text-align: justify;
+}
+.imagen img{
+    width: 100%;
+    max-width: 650px;
+}
+.tabla{
+    display: flex;
+    width: 70%;
+    margin-left: 13%;
+    margin-bottom: 3%;
+    background-color: #b3c5dba8;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.411));
+}
+.tabla img{
+    width: 100%;
+    max-width: 150px;
+}
+.tabla p{
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+/* MOVIL */
 @media (max-width: 576px){
-    .fondo{
-        width: 100%;
-        height: 53px;
-        margin-top: 30px;
+    .contenido{
+        margin-top: 8%;
     }
-    .titulo h2{
-        width: 65%;
-        margin-left: 13%;
-        font-size: 24px;
-    }
-    .fila{
-        width: 75%;
-        margin-left: 12%;
-        background-color: #d291fd34;
-        transition: .0s ease;
-        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.151);
-    }
-    .fila h2{
-        font-size: 24px;
+    .text h1{
         font-weight: 600;
     }
-    .Caja{
-        width: 83%;
-        display: flex;
-        flex-direction: column;
+    .text p{
+        margin-top: 3%;
+        font-size: 20px;
     }
-    .Caja p{
-        width: 100%;
-        font-size: 14px;
-        line-height: 20px;
-        margin-top: 50%;
+    .imagen img{
+        max-width: 250px;
+        margin-left: 10%;
     }
-    .Caja img{
+    .tabla{
+        display: block;
+        width: 60%;
+        margin-left: 18%;
+    }
+    .tabla img{
         max-width: 200px;
-        margin-left: 13%;
-        margin-bottom: 50%;
+    }
+    .tabla p{
+        margin-top: 3%;
+        margin-left: 5%;
+        font-size: 12px;
     }
 }
 /* TABLET */
 @media (min-width: 577px) and (max-width: 1087px){
-    .fondo{
-        width: 100%;
-        height: 65px;
-        margin-top: 12%;
+    .contenido{
+        margin-top: 8%;
     }
-    .titulo h2{
-        width: 65%;
-        margin-left: 16%;
-        font-size: 34px;
-    }
-    .fila{
-        width: 75%;
-        margin-left: 10%;
-        margin-bottom: 2%;
-        padding-bottom: 2%;
-    }
-    .fila h2{
-        font-size: 34px;
+    .text h1{
         font-weight: 600;
     }
-    .Caja{
-        width: 83%;
-        display: flex;
-        flex-direction: column;
-    }
-    .Caja p{
-        width: 100%;
+    .text p{
+        margin-top: 3%;
         font-size: 22px;
-        line-height: 30px;
-        margin-top: 50%;
     }
-    .Caja img{
-        width: 100%;
-        max-width: 350px;
-        margin-left: 15%;
-        margin-top: 0%;
+    .imagen img{
+        max-width: 450px;
+        margin-left: 10%;
+    }
+    .tabla{
+        width: 85%;
+        margin-left: 8%;
+    }
+    .tabla img{
+        max-width: 150px;
+    }
+    .tabla p{
+        margin-top: 3%;
+        margin-left: 2%;
+        font-size: 14px;
     }
 }
+
 /* --------------- */
 /* -- Copyright -- */
 #copy{
@@ -336,9 +281,11 @@ a{
     font-size: 30px;
     font-weight: 500;
 }
+.texto ul li{
+    color: #ffffff;
+}
 /* MOVIL */
-
-@media (max-width: 1087px){
+@media (max-width: 576px){
     #copy img{
         max-width: 75px;
         margin-left: 30%;
@@ -352,7 +299,6 @@ a{
         font-size: 10px;
     }
 }
-
 /* TABLET */
 @media (min-width: 577px) and (max-width: 1087px){
     #copy img{
